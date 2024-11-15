@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <div class="text-3xl font-bold underline">Start to-do list</div>
+  <div class="max-w-3xl mx-auto my-64">
+    <RouterView />
+  </div>
 </template>
