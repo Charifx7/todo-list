@@ -32,20 +32,23 @@ const editTodo = async (selectedTodo) => {
 </script>
 
 <template>
-    <div class="flex items-center justify-center bg-gray-100 ">
-        <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-8 relative">
+    <div class="flex items-center justify-center bg-gray-100">
+        <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg p-6 sm:p-8 relative">
             <!-- Back Button -->
             <RouterLink class="btn absolute top-4 left-4 bg-gray-600 hover:bg-gray-400 text-white px-4 py-2 rounded-lg"
                 :to="{ name: 'todolist' }">
                 Back
             </RouterLink>
+
             <!-- Edit Title -->
-            <h1 class="text-4xl font-bold text-center mb-6 text-black">Edit</h1>
+            <h1 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-black">Edit</h1>
+
             <!-- Form for Editing -->
             <div class="form-control w-full mb-6">
                 <input type="text" placeholder="Type here" class="input input-bordered w-full px-4 py-2 text-xl"
                     v-model="todoStore.selectedTodo.name">
             </div>
+
             <!-- Status Dropdown -->
             <div class="mb-6">
                 <label class="block text-2xl mb-2 text-black">Status</label>
@@ -66,9 +69,10 @@ const editTodo = async (selectedTodo) => {
                     </div>
                 </div>
             </div>
+
             <!-- Apply Button -->
             <div class="flex">
-                <button class="btn bg-yellow-600 mt-3 w-full text-white text-2xl  rounded-lg text-center"
+                <button class="btn bg-yellow-600 mt-3 w-full text-white text-xl sm:text-2xl rounded-lg text-center"
                     @click="editTodo(todoStore.selectedTodo)">
                     Apply
                 </button>
