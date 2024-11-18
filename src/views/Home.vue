@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import { useTodoStore } from '@/stores/counter';
+import { useTodoStore } from '@/stores/todo';
 import { onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
 import { computed } from 'vue';
