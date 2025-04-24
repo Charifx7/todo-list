@@ -1,29 +1,21 @@
-# todo-list
+# 📝 Todo List App
+## 📸 Live Demo: https://todo-list-beta-two-62.vercel.app/
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📚 Features
+- ✅ เพิ่ม ลบ และแก้ไขรายการ To-Do
+- ✅ รองรับการจัดการรายการที่ทำเสร็จแล้ว
+- ✅ ระบบการจัดการสถานะของรายการ
 
-## Recommended IDE Setup
+## 🧰 Tech Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+| Frontend | Backend | Deploy |
+|----------|---------| --------|
+| Vue.js (Vite + Composition API) | MockAPI | Vercel (FE) |
 
-## Customize configuration
+## 🛠️ Installation
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```bash
+cd todo-list
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
